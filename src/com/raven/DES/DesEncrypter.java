@@ -1,4 +1,4 @@
-package com.corbie.DES;
+package com.raven.DES;
 
 import javax.crypto.Cipher;
 import javax.crypto.SecretKey;

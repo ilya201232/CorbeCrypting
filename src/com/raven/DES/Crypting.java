@@ -1,4 +1,4 @@
-package com.corbie.DES;
+package com.raven.DES;
 
 
 import javax.crypto.KeyGenerator;
@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 public class Crypting {
 
-    static void chat(String msg, SecretKey key) throws Exception{
+    private static void chat(String msg, SecretKey key) throws Exception{
         DesEncrypter encrypter = new DesEncrypter(key);
         String encrypted = encrypter.encrypt(msg);
         System.out.println("Зашифрованное сообщение >>> " + encrypted);
@@ -20,7 +20,7 @@ public class Crypting {
         SecretKey key = KeyGenerator.getInstance("DES").generateKey();
 
 
-        System.out.print("Добро пожаловать в альфа версию мессенждера Corbie!\n" +
+        System.out.print("Добро пожаловать в альфа версию мессенждера Raven!\n" +
                 "Для помощи введите help\n" +
                 "Введите команду:\n");
 
